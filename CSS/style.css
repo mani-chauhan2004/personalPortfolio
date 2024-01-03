@@ -1,0 +1,383 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("./IMG/andrew-kliatskyi-0gTTqEaAW3g-unsplash.jpg");
+    background-size: cover;   
+}
+
+
+#portfolio_logo{
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 4vh;
+    cursor: default;
+    color: beige;
+    animation: shiftright 1s ease forwards;
+}
+
+#portfolio_logo:hover{
+    color: aqua;
+    text-shadow: 0px 0px 10px blue;
+}
+
+section{
+    align-items: center;
+}
+
+#navbar{
+    z-index: 2;
+    position: fixed;
+    align-items: center;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    padding: 5vh;
+    background-color: rgba(28, 28, 30, 0.3) ;
+    justify-content: space-between;
+}
+
+#navbar:hover{
+    box-shadow: 0vh 0vh 3vh beige;
+    background-color: black;
+}
+
+
+#p_logo{
+    z-index: 3;
+}
+
+#nav_box{
+    display: flex;
+    gap: 3vw;
+    opacity: 0;
+    animation: shiftleft 1s ease 0.5s forwards; 
+    
+}
+
+.navbar_elements{
+    z-index: 3;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: beige;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navbar_elements:hover{
+    color: aqua;
+    text-shadow: 0px 0px 3vh blue;
+    font-size: 22px;
+}
+
+
+.main_body{
+    position: relative;
+    display: flex;
+    color: beige;
+    top: 12vh;
+    height: 100vh;
+    width: 100vw;
+    background-color:#1fc9f80f;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0vh 8vw;
+    border-top: 0.2vw solid #1FCAF8;
+    font-family: serif;
+}
+
+#data{
+    padding: 10% 0%;
+    opacity: 0;
+    animation: shiftright 1s ease 1s forwards;
+}
+
+#nametag{
+    font-size: 8vh;
+    font-weight: 500;
+}
+
+#nametag span{
+    font-weight: 900;
+}
+
+#data p{
+    font-size: 8vh;
+    color: beige;
+    font-weight: 500;
+}
+
+#data p span {
+    font-weight: 900;
+}
+
+#data span{
+    color: #1FCAF8;
+    font-size: 10vh;
+    font: 900;
+    text-shadow: 0vh 0vh 1vh #0fa4cdcd;
+}
+
+
+#image img{
+    height: 70%;
+    opacity: 0;
+    border: 1vw solid #1FCAF8;
+    border-radius: 50%;
+    animation: shiftleft 1s ease 1s forwards;
+}
+
+#image:hover img{
+    box-shadow: 0vh 0vh 3vh aquamarine;
+    scale: 1.1;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+
+.page2{
+    position: relative;
+    top: 12vh;
+    padding: 2.5vw;
+    height: 100vh;
+    background-color: #1fc9f80f;
+    font-family: serif;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #1fc9f80f;
+    padding: 5vh 2vw;
+    height: 60vh;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+    border: 0.5vh solid beige;
+    border-radius: 10%;
+    margin-top: 12vh;
+}
+
+.about:hover{
+    box-shadow: 0vh 0vh 3vh beige;
+    background-color: black;
+}
+
+#heading{
+    font-size: 8vh;
+    margin-bottom: 5vh;
+    color: #1FCAF8;
+}
+
+.about p{
+    padding: 0vh 3vh;
+    height: 30vh;
+    margin-bottom: 2.5vh;
+    font-size: 4vh;
+    color: beige;
+}
+
+.about p a{
+    text-decoration: none;
+    color: #1FCAF8;
+    font-weight: 550;
+}
+.about p span{
+    color: #1FCAF8;
+    font-weight: 550;
+}
+
+.page3Box{
+    position: relative;
+    top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100vw;
+    background-color: #1FCAF8;
+}
+
+.page3Box i{
+    font-size: 25vh;
+    color: white;
+    padding: 2.5vh;
+    border: 1vh solid #1FCAF8;
+    border-radius: 50%;
+    animation: floating 3s linear infinite;
+}
+.page3Box iconify-icon{
+    font-size: 25vh;
+    color: white;
+    padding: 2.5vh;
+    border: 1vh solid #1FCAF8;
+    border-radius: 50%;
+    animation: floating 3s linear infinite;
+}
+
+.page3Box iconify-icon:hover{
+    box-shadow: 0vh 0vh 2vw beige;
+    background-color: black;
+}
+.page3Box i:hover{
+    box-shadow: 0vh 0vh 2vw beige;
+    background-color: black;
+}
+
+.page4{
+    padding: 30vh 2vw;
+}
+
+.page4Box{
+    position: relative;
+    display: flex;
+    top: 12vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    width: 95vw;
+    margin-top: 10vh;
+    background-color: #1fc9f80f;
+}
+
+.page4flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 95vw;
+    padding: 0vh 4vw;
+    gap: 8vw;
+}
+
+.page4flex a{
+    font-size: 25vh;
+    color: white;
+    padding: 2.5vh;
+    border: 1vh solid #1FCAF8;
+    border-radius: 50%;
+    animation: floating 3s linear infinite;
+}
+
+.page4Box h1{
+    font-size: 8vh;
+    color: #1FCAF8;
+}
+
+.page4Box a:hover{
+    box-shadow: 0vh 0vh 2vw beige;
+    background-color: black;
+}
+
+
+.container {
+    max-width: 50vw;
+    margin: 5vw auto;
+    background-color: #121213;
+    padding: 5vw;
+    border-radius: 2%;
+}
+
+.container:hover {
+    box-shadow: 0vw 0vw 2vw beige;
+}
+
+.container h1 {
+    text-align: center;
+    color: #1FCAF8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 2vw;
+    color: #16c3f8;
+}
+
+input,
+textarea {
+    padding: 1vw;
+    margin-bottom: 2vw;
+    border: 1px solid #ccc;
+    border-radius: 2%;
+}
+
+button {
+    padding: 1vw;
+    background-color: #007bff;
+    color: beige;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes floating {
+    0%{
+        transform:translateY(-0.5vh);
+    }
+    25%{
+        transform:translateY(0vh);
+    }
+    50%{
+        transform:translateY(0.5vh);
+    }
+    75%{
+        transform:translateY(0vh);
+    }
+    100%{
+        transform:translateY(-0.5vh);
+    }
+
+}
+
+
+@keyframes shiftright {
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes shiftleft {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
